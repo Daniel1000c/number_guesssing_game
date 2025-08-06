@@ -1,0 +1,41 @@
+# Node.js dependencies (Tailwind CLI or PostCSS)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+public/build/
+public/dist/
+
+# Tailwind generated CSS (if using CLI or build process)
+*.css.map
+*.tmp.css
+*.tmp
+*.output.css
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE/editor config
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+*.log
+*.cache
