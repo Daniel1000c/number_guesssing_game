@@ -34,7 +34,7 @@
 
            <!--Number Guess Input field-->
            <form action="#" class="bg-gray-500 m-7 rounded-2xl">
-            <input type="number" class="bg-red m-7 p-2 border-2 border-gray-600 rounded-xl text-white">
+            <input id="guess" name="guess" type="number" class="bg-red m-7 p-2 border-2 border-gray-600 rounded-xl text-white">
            </form>
 
            <p id="gameMessage" class="text-white font-mono p-5">Let's play the game....</p>
@@ -46,7 +46,7 @@
           <!--Button Container-->
           <div class="bg-gray-500 flex justify-center align-middle gap-5 rounded-2xl h-auto">
               <!--Check number button-->
-              <button class="bg-slate-800 inline-block w-3xs p-2 m-5 rounded-2xl text-white font-mono 
+              <button id="checkNumber" class="bg-slate-800 inline-block w-3xs p-2 m-5 rounded-2xl text-white font-mono 
               tracking-wide hover:bg-gray-400 hover:border-2 hover:border-slate-900 hover:underline hover:text-slate-900 hover:font-extrabold
                transition duration-600 ease-in-out">
                 Check Number
@@ -71,5 +71,6 @@
         </p>
       </div>
     </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
