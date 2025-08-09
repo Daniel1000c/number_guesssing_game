@@ -9,6 +9,15 @@ let high_score = 0;
 //Create try counter
 let tries = 10;
 
+//Create secret number function
+const secretNumber = function () {
+  return Math.trunc(Math.random() * 40) + 1;
+};
+
+//Create number variable
+const number = (document.getElementById("secretNumber").textContent =
+  secretNumber());
+
 //Create display message function
 const displayMessage = function (message) {
   //Get message id
@@ -31,5 +40,14 @@ document.getElementById("checkNumber").addEventListener("click", function () {
     //Change text color to red when this happens
     document.getElementById("gameMessage").style.color = "#FF0000";
     document.getElementById("gameMessage").style.fontWeight = "bolder";
+  } else {
+    //Check if user number is the same as secret Number
+    if (userGuess === number) {
+      //Create winning number
+      displayMessage(`Congratulations, The secret number was ${number}`);
+
+      //Change winning message color
+      document.getElementById("gameMessage").style.color = "#00FF00";
+    }
   }
 });
